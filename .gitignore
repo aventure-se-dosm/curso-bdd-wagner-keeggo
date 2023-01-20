@@ -1,2 +1,16 @@
-target/
+#Specific IDE directories
+.vsc
+.eclipse
+.classpath
+
+#Formatos
 ./*.class
+./*.temp
+./*.tmp
+./*.bin
+./*.properties
+
+#Pastas
+
+target/
+target/*
