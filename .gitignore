@@ -4,25 +4,14 @@
 .classpath
 
 #Formatos
-<<<<<<< HEAD
+
 *.class
 *.temp
 *.tmp
 *.bin
 *.properties
-=======
-./*.class
-./*.temp
-./*.tmp
-./*.bin
-./*.properties
->>>>>>> 27152550be531b02eafd3cfe47e70703513b8662
 
 #Pastas
 
 target/
-<<<<<<< HEAD
 target/*
-=======
-target/*
->>>>>>> 27152550be531b02eafd3cfe47e70703513b8662
