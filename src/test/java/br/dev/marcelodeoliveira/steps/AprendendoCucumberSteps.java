@@ -3,6 +3,9 @@ package br.dev.marcelodeoliveira.steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Então;
+import io.cucumber.java.pt.Quando;
 
 public class AprendendoCucumberSteps {
 	@Given("que criei o arquivo")
@@ -44,5 +47,22 @@ public class AprendendoCucumberSteps {
 		System.out.println("Execution finished successfully.");
 
 	}
+	
+	@Dado("que o valor do contador é {int}")
+	public void queOValorDoContadorÉ(Integer int1) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@Quando("eu incrementá-lo em {int}")
+	public void euIncrementáLoEm(Integer int1) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@Então("o seu valor será {int}")
+	public void oSeuValorSerá(Integer int1) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	
 
 }
