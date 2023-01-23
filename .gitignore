@@ -11,6 +11,12 @@
 *.bin
 *.properties
 
+*/.class
+*/.temp
+*/.tmp
+*/.bin
+*/.properties
+
 #Pastas
 
 target/
