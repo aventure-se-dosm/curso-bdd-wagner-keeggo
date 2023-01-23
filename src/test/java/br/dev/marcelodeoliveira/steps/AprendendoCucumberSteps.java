@@ -1,5 +1,8 @@
 package br.dev.marcelodeoliveira.steps;
 
+import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -8,6 +11,11 @@ import io.cucumber.java.pt.Então;
 import io.cucumber.java.pt.Quando;
 
 public class AprendendoCucumberSteps {
+	
+	private int contador = 15;
+	
+	
+	
 	@Given("que criei o arquivo")
 	public void que_criei_o_arquivo() {
 		System.out.println("Arquivo criado com sucesso!");
@@ -50,19 +58,32 @@ public class AprendendoCucumberSteps {
 	
 	@Dado("que o valor do contador é {int}")
 	public void queOValorDoContadorÉ(Integer int1) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    
+	contador = int1;
+		
+		// Write code here that turns the phrase above into concrete actions
+	   // throw new io.cucumber.java.PendingException();
 	}
 	@Quando("eu incrementá-lo em {int}")
 	public void euIncrementáLoEm(Integer int1) {
+		
+		contador += int1;
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	   // throw new io.cucumber.java.PendingException();
 	}
 	@Então("o seu valor será {int}")
 	public void oSeuValorSerá(Integer int1) {
+		
+		//fazer o assert falhar: int1 = 45;
+		System.out.printf("\n%s\t%d\n%s\t%d\n\n", "Valor Esperado:", contador, "Valor obtido:", int1);
+		
+		// lançar uma exceção pra causar erro:
+		// visto como falha:
+		// throw new RuntimeException();
+		assertEquals(contador, int1);
+		
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    //throw new io.cucumber.java.PendingException();
 	}
 	
-
 }
